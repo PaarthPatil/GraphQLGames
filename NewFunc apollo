@@ -1,0 +1,85 @@
+
+query NewFunc($id : ID!){
+  game(id: $id){
+    id,
+    title,
+    platform,
+    reviews{
+      author{
+        name
+        verified
+      }
+      game_id
+      content
+    }
+    
+  }
+
+}
+
+
+
+query assign{
+  reviews{
+    id,
+    content,
+  },
+  review(id:3){
+    id,
+    content
+  }
+
+}
+
+
+query AuthorCheck{
+  authors{
+    id,
+    name,
+    verified,
+  },
+  
+    games{
+      id,
+      releaseYear,
+    }
+  
+}
+
+
+query Games1{
+  games{
+  id,
+  title,
+  releaseYear,
+  platform
+  
+  }
+}
+
+
+
+
+query GetAllUsers($gameId: ID!) {
+
+    games{
+     id
+     title
+     releaseYear
+
+    }
+    authors{
+      id,
+      verified
+    }
+  games {
+    platform
+    
+  }
+}
+
+query Users2{
+games{
+  title
+}
+}

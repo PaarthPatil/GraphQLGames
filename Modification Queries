@@ -1,0 +1,36 @@
+mutation DeleteMutation($id:ID!){
+  deleteGame(id:$id) {
+    id,
+    title,
+    releaseYear
+  }
+}
+
+
+
+mutation AddMutation($game: AddGameInput!){
+  addGame(game:$game) {
+    id,
+    title,
+    platform,
+    releaseYear
+  }
+}
+
+
+query GameList{
+  games {
+    id
+    title
+  }
+}
+
+
+
+mutation editMutation($edits:editGameInput!, $id:ID!){
+  updateGame(edits:$edits,id:$id){
+    title,
+    releaseYear
+  }
+
+}

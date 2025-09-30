@@ -1,0 +1,8 @@
+on VisualStudio-
+
+Run command-
+node index.js    or    node index
+
+or 
+
+nodemon index.js   or   nodemon index
