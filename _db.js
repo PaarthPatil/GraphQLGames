@@ -9,6 +9,7 @@ const db = {
   ],
   reviews: [
     { id: '1', rating: 9, content: 'An immersive open world with a compelling story.', author_id: '1', game_id: '1' },
+    { id: '7', rating: 9, content: 'Compelling story of the game.', author_id: '1', game_id: '3' },
     { id: '2', rating: 10, content: 'A masterpiece of game design and exploration.', author_id: '2', game_id: '2' },
     { id: '3', rating: 7, content: 'Vast, but can feel a bit empty at times.', author_id: '3', game_id: '4' },
     { id: '4', rating: 8, content: 'Challenging combat and incredible world-building.', author_id: '1', game_id: '3' },
@@ -21,5 +22,6 @@ const db = {
     { id: '3', name: 'Rohan Das', verified: true },
   ],
 };
+
 
 export default db;
